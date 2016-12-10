@@ -11779,7 +11779,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries necessary for this project</span>
@@ -11851,28 +11851,28 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Minimum price of the data</span>
 <span class="c1">#目标：计算价值的最小值</span>
-<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Maximum price of the data</span>
 <span class="c1">#目标：计算价值的最大值</span>
-<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Mean price of the data</span>
 <span class="c1">#目标：计算价值的平均值</span>
-<span class="n">mean_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">mean_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Median price of the data</span>
 <span class="c1">#目标：计算价值的中值</span>
-<span class="n">median_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">median_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># TODO: Standard deviation of prices of the data</span>
 <span class="c1">#目标：计算价值的标准差</span>
-<span class="n">std_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">std_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1"># Show the calculated statistics</span>
 <span class="c1">#目标：输出计算的结果</span>
@@ -11900,7 +11900,7 @@ Minimum price: $105,000.00
 Maximum price: $1,024,800.00
 Mean price: $454,342.94
 Median price $438,900.00
-Standard deviation of prices: $165,340.28
+Standard deviation of prices: $165,171.13
 </pre>
 </div>
 </div>
@@ -11931,7 +11931,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>回答: </strong> <em>RM与MEDV是正相关；LSTAT与MEDV是负相关；PTRATIO与MEDV是负相关</em></p>
+<p><strong>回答: </strong> <em>平均房间数量影响房屋大小，房屋越大房子越贵说毋庸置疑的，所以RM与MEDV是正相关；很显然高收入人群会倾向于住在一起，所以地区的低收入阶级越多，房屋价格越低，LSTAT与MEDV是负相关；学生和老师比例越低教育质量越高，教育质量高的地方房屋价格会更高，所以PTRATIO与MEDV是负相关</em></p>
 
 </div>
 </div>
@@ -11964,7 +11964,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;r2_score&#39;</span>
@@ -12029,7 +12029,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Calculate the performance of this model</span>
@@ -12087,7 +12087,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;train_test_split&#39;</span>
@@ -14619,7 +14619,7 @@ PwbQtpK0KF8AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>答案: </strong> <em>KFold是通过将数据分为K个子集，然后分别将每个子集作为测试集其余作为训练集，进行交叉验证。使用这种方法我们可以得到训练集和测试集的决定系数，用来作为网格搜索选择参数的依据。</em></p>
+<p><strong>答案: </strong> <em>KFold是通过将数据分为K个子集，然后分别将每个子集作为测试集其余作为训练集，在迭代运行后，将得到的分数求平均值。使用这种方法我们可以得到训练集和测试集的决定系数，用来作为网格搜索选择参数的依据；比起简单的划分训练测试集，交叉验证的方式几乎把所有的数据都分别做了训练和测试，可以解决数据分布不均匀和数据量少的问题。</em></p>
 
 </div>
 </div>
@@ -14839,7 +14839,7 @@ Predicted selling price for Client 3&#39;s home: $938,053.85
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>答案: </strong> <em>房屋售价分别为409,400.00美元、229,682.35美元、938,053.85美元；从房屋的特征数制判断，价格是合理的，与问题1的答案较为一致。</em></p>
+<p><strong>答案: </strong> <em>房屋售价分别为409,400.00美元、229,682.35美元、938,053.85美元；从房屋的特征数制判断，价格是合理的，对比客户1的房间数比客户2的房间数大，而贫困指数和学生老师比更小，所以房屋价值更高，客户3的房屋对应特征更优秀，尤其贫困指数只有3%，所以其房屋价格达到了客户2的两倍多。</em></p>
 
 </div>
 </div>
